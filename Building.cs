@@ -16,6 +16,7 @@ namespace csharp_oop
         public List<Water> WaterFountains { get; set; }
         public Lights Light {get; set;}
         public Fans Fan {get; set; }
+        public List<Employee> Employees { get; set; }
 
         public Building(
             string userInputForOuterColor,
@@ -86,6 +87,23 @@ namespace csharp_oop
             // Fans
 
             Fan = new Fans(10, "White", "Fans", 200);
+
+            // list of employees
+
+            Employees = new List<Employee>();   
+        }
+
+        // Emergency Fire Alarm
+        public static void EmegencyFireAlert(bool isFireMan)
+        {
+            if (isFireMan)
+            {
+                Console.WriteLine("All Fire Alarms Engaged!");
+            }
+            else
+            {
+                Console.WriteLine("Please Call 911!");
+            }
         }
     }
 }
