@@ -1,13 +1,13 @@
 ﻿using System;
 namespace csharp_oop
 {
-    public class Rooms:GymAsset
+    public class Room:GymAsset
     {
         public int NumberOfRooms { get; set; }
         public string ColorOfRooms { get; set; }
 
 
-        public Rooms(int RoomsQuantity,
+        public Room(int RoomsQuantity,
             string RoomsColor,
              string nameOfAsset,
             decimal baseValueOfAsset

@@ -8,9 +8,8 @@ namespace csharp_oop
         public string InnerColor { get; set; }
         
         public SecurityDoor SecureEntrance { get; set; }
-        public Rooms BasicRoom { get; set; }
         public List<Washroom> Washrooms { get; set; }
-        public List<Rooms> Room { get; set; }
+        public List<Room> Rooms { get; set; }
         public Reception_Area Reception_Areas { get; set; }
         public List<LockerRoom> LockerRooms { get; set; }
         public LeisureArea LeisureAreas { get; set; }
@@ -44,14 +43,14 @@ namespace csharp_oop
             // needs to add eqipments to rooms
 
 
-            Room = new List<Rooms>();
-            Rooms BasicRoom = new Rooms(1, "Yellow", "Basic Room", 240000);
-            Rooms TreadmillRoom = new Rooms(1, "Wood", "Treadmill Room", 60000);
-            Rooms SpaRoom = new Rooms(1, "Black", "Spa Room", 40000);
+            Rooms = new List<Room>();
+            Room basicRoom = new Room(1, "Yellow", "Basic Room", 240000);
+            Room treadmillRoom = new Room(1, "Wood", "Treadmill Room", 60000);
+            Room spaRoom = new Room(1, "Black", "Spa Room", 40000);
 
-            Room.Add(BasicRoom);
-            Room.Add(TreadmillRoom);
-            Room.Add(SpaRoom);
+            Rooms.Add(basicRoom);
+            Rooms.Add(treadmillRoom);
+            Rooms.Add(spaRoom);
 
             //Reception Area
 
